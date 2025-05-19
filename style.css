@@ -18,6 +18,16 @@ header.hero {
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+.site-subtitle {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #d9e9ff;
+}
+
+.dark .site-subtitle {
+  color: #ccc;
+}
 
 .hero-inner {
   max-width: 900px;
