@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
+  <meta charset="UTF-8">
+  <title>Projects | Tyler Brown</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-size: contain;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>My Projects</h1></header>
+  <header class="hero">
+<div class="hero-inner">
+    <h1>Projects</h1>
+    <p>Hands-on infrastructure, cloud experiments, and dev-minded deployments.</p>
+
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
+    <a href="how-i-built-this.html">How I Built This</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <ul>
-      <li><strong>EC2 Portfolio Site:</strong> This site you're viewing, built with Apache on AWS.</li>
-      <li><strong>S3 Static Hosting:</strong> A static resume site using S3 + CloudFront.</li>
-      <li><strong>IAM Policy Lab:</strong> Custom permissions and secure user access control.</li>
-    </ul>
+
+  <main class="projects-container">
+
+    <div class="project-card">
+      <h2>🌐 EC2 Portfolio Site</h2>
+      <p>This full-stack portfolio is hosted on an Amazon EC2 instance using Apache, Git, SSL, and manual Linux configuration. Features include backup automation, SCP-based resume uploads, and full source tracking via GitHub.</p>
+      <p><strong>Stack:</strong> EC2, Apache, Git, SCP, Bash</p>
+      <a href="https://github.com/Browntyler48/ec2-portfolio-site" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h2>☁️ S3 Static Resume Site</h2>
+      <p>A minimal resume-only version of this site hosted on S3 with static website hosting and optional CloudFront distribution. Demonstrates serverless architecture and domain routing.</p>
+      <p><strong>Stack:</strong> S3, Route 53, CloudFront</p>
+      <a href="#">🔗 Coming Soon</a>
+    </div>
+
+    <div class="project-card">
+      <h2>🔐 IAM Policy Lab</h2>
+      <p>Hands-on IAM management with the AWS CLI — creating users, groups, inline & managed policies, and simulating permission boundaries. This sandbox helped me deeply understand cloud security fundamentals.</p>
+      <p><strong>Stack:</strong> AWS CLI, IAM, JSON, Bash</p>
+      <a href="#">🔗 GitHub (Private for now)</a>
+    </div>
+
+    <div class="project-card">
+      <h2>📦 Infrastructure Backup Pipeline</h2>
+      <p>A script-based solution to archive, compress, and securely store `.tar.gz` site backups locally and via S3 sync. Great for showcasing disaster recovery thinking.</p>
+      <p><strong>Stack:</strong> Bash, SCP, S3, Cron</p>
+      <a href="#">🔗 Sample Script (Coming Soon)</a>
+    </div>
+
   </main>
+
   <footer>&copy; 2025 Tyler Brown</footer>
 </body>
 </html>

@@ -1,24 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Tyler Brown | Cloud Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-size: contain;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      color: #333;
+    }
+  </style>
+
 </head>
 <body>
-  <header>
-    <h1>Tyler Brown</h1>
-    <p>Cloud Solutions Architect in Training</p>
+  <header class="hero">
+   <div class="hero-inner">
+    <h1>Hi, I’m Tyler Brown</h1>
+    <p>Cloud Architect · Infrastructure · Automation · Deployment</p>
+    <a href="resume.pdf" class="cta">📄 Download My Resume</a>
+
   </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
+    <a href="how-i-built-this.html">How I Built This</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <main>
-    <h2>Welcome</h2>
-    <p>This site is running on AWS EC2 and was built from the ground up using Linux, Apache, and raw terminal skills.</p>
+    <section class="features">
+      <div class="card">
+        <h2>🔧 Real Infrastructure</h2>
+        <p>This site is hosted on EC2 with SSL, GitHub integration, and Linux-level control. No drag-and-drop nonsense.</p>
+      </div>
+      <div class="card">
+        <h2>🛠️ DevOps Mindset</h2>
+        <p>Includes backups, SSH access, SCP file transfers, automation potential — built like a platform, not a page.</p>
+      </div>
+      <div class="card">
+        <h2>📬 Connect With Me</h2>
+        <p>Reach out via secure contact form, or find me on LinkedIn or email. Powered by Formspree and styled with pride.</p>
+      </div>
+    </section>
   </main>
-  <footer>&copy; 2025 Tyler Brown</footer>
+
+  <footer>&copy; 2025 Tyler Brown. All Rights Reserved.</footer>
 </body>
 </html>
+

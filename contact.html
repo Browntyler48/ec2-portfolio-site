@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <title>Contact | Tyler Brown</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-color: #f8f9fa;
+      background-size: contain;
+      background-attachment: fixed;
+      background-repeat: repeat;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>Contact Me</h1></header>
+  <header class="hero">
+<div class="hero-inner">
+    <h1>Contact Me</h1>
+    <p>I’d love to connect — whether you want to collaborate, chat about cloud, or hire me.</p>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
+    <a href="how-i-built-this.html">How I Built This</a>
     <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <p>Email me at: <a href="mailto:tyler@example.com">tyler@example.com</a></p>
-    <p>Connect on <a href="https://www.linkedin.com/in/tyler-brown-1390b095/" target="_blank">LinkedIn</a></p>
+   </nav>
+
+  <main class="contact-page">
+    <section class="contact-buttons">
+      <a href="mailto:Brown.tyler48@gmail.com" class="contact-btn email-btn">📧 Email Me</a>
+      <a href="https://www.linkedin.com/in/tyler-brown-1390b095/" target="_blank" class="contact-btn linkedin-btn">🔗 Connect on LinkedIn</a>
+    </section>
+
+    <section class="contact-container">
+      <form action="https://formspree.io/f/mblobrqb" method="POST">
+        <input type="hidden" name="_redirect" value="http://<107.23.251.166>/thankyou.html">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="_replyto" placeholder="your@email.com" required>
+
+        <label for="message">Message</label>
+        <p class="form-note"style="margin-top: 1rem;">Let me know how I can help or if you'd like to connect professionally.</p>
+        <textarea name="message" rows="6" placeholder="Start typing..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
+
   <footer>&copy; 2025 Tyler Brown</footer>
 </body>
 </html>

@@ -2,6 +2,121 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-color: #f8f9fa;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #333;
+}
+
+
+header.hero {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.dark .hero {
+  background: linear-gradient(to right, #111, #222);
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #004080;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e0e0e0;
+}
+
+nav {
+  background-color: #004080;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #f1f1f1;
+  color: #555;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
   background: #f7f7f7;
   color: #333;
 }
@@ -39,4 +154,287 @@ footer {
   color: #555;
   padding: 1rem;
   margin-top: 2rem;
+}
+/* --- Contact Form Styling --- */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0066cc;
+  cursor: pointer;
+}
+/* --- Contact Page Styling --- */
+.contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #004080;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-container .form-note {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #004080;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #0066cc;
+}
+.contact-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.email-btn {
+  background-color: #00796B;
+}
+
+.email-btn:hover {
+  background-color: #009688;
+}
+
+.linkedin-btn {
+  background-color: #0A66C2;
+}
+
+.linkedin-btn:hover {
+  background-color: #1A75D1;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+.about-container section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.about-container h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.about-container ul {
+  padding-left: 1.25rem;
+}
+
+.about-container li {
+  margin-bottom: 0.75rem;
+}
+.projects-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0A66C2;
+}
+
+.contact-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.contact-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.email-btn {
+  background-color: #00796B;
+}
+
+.email-btn:hover {
+  background-color: #009688;
+}
+
+.linkedin-btn {
+  background-color: #0A66C2;
+}
+
+.linkedin-btn:hover {
+  background-color: #1A75D1;
+}
+
+.contact-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #004080;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-container .form-note {
+  margin: -1rem 0 1rem;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #004080;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #0066cc;
+}
+.stack-chart {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.stack-chart h2 {
+  color: #004080;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.dark .stack-chart {
+  background: #1e1e1e;
+  color: #f1f1f1;
 }

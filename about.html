@@ -1,21 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Me</title>
+  <meta charset="UTF-8">
+  <title>About Me | Tyler Brown</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-size: contain;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>About Me</h1></header>
+  <header class="hero">
+<div class="her-inner">
+    <h1>About Me</h1>
+    <p>Cloud Architect — blending technical strategy with business outcomes.</p>
+</header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
+    <a href="how-i-built-this.html">How I Built This</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <p>I’m Tyler Brown, a dedicated cloud enthusiast with hands-on AWS experience. My background includes EC2, S3, IAM, and a bit of brute-force Linux skill.</p>
-  </main>
-<a href="resume.pdf" download>Download My Resume (PDF)</a>
-  <footer>&copy; 2025 Tyler Brown</footer>
+
+  <main class="about-container">
+    <section class="bio">
+      <h2>👋 Summary</h2>
+      <p>
+        I’m a Cloud Solutions Architect candidate with AWS, Azure, and GCP certifications and over 10 years of success in sales, business development, and industrial technology. I thrive at the intersection of complex problem-solving, consultative strategy, and digital transformation. My passion lies in enabling organizations to modernize their infrastructure, migrate to the cloud, and unlock operational potential.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>🧠 What I Do</h2>
+      <ul>
+        <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
+        <li><strong>Cloud Architecture:</strong> IaaS, PaaS, SaaS, Migration Strategies</li>
+        <li><strong>Business & Leadership:</strong> Consultative Sales, Client Relationship Management, Project Delivery</li>
+        <li><strong>DevOps:</strong> Virtualization, Basic DevOps Concepts, CI/CD Awareness</li>
+      </ul>
+    </section>
+
+     <section class="stack-chart">
+  	<h2>📊 My Tech Stack</h2>
+  	<canvas id="techChart" width="400" height="400"></canvas>
+	</section>
+
+    <section class="certifications">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li>AWS Certified Solutions Architect – Associate (2025)</li>
+        <li>Microsoft Certified: Azure Solutions Architect Expert (2025)</li>
+        <li>Google Cloud Certified Associate Cloud Engineer (2025)</li>
+        <li>Certified Kubernetes Administrator (CKA) (2025)</li>
+        <li>Terraform Associate (2025)</li>
+      </ul>
+    </section>
+
+    <section class="timeline">
+      <h2>📈 Career Highlights</h2>
+      <ul>
+        <li><strong>2024–Present:</strong> Industry Manager – Biomass & Industrial at ANDRITZ (leading digital & technical strategy)</li>
+        <li><strong>2017–2024:</strong> Business Development Manager at AMANDUS KAHL (grew US biomass & feed tech market)</li>
+        <li><strong>2014–2017:</strong> Export & Logistics Lead at Exide (hazmat logistics for global industrial battery exports)</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>🎓 Education</h2>
+      <p>B.S. Mechanical Engineering — University of New Mexico (2013)</p>
+      <p>Senior project: Renewable energy systems & fluid dynamics. Continued cloud learning via boot camps & self-guided labs.</p>
+
+<script>
+  const ctx = document.getElementById('techChart').getContext('2d');
+  const techChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['AWS', 'Azure', 'GCP', 'Linux', 'Git', 'Bash', 'Apache', 'SCP', 'HTML/CSS', 'JavaScript'],
+      datasets: [{
+        label: 'Skill Level (1–10)',
+        data: [9, 7, 6, 8, 9, 8, 7, 7, 9, 5],
+        backgroundColor: 'rgba(0, 102, 204, 0.6)',
+        borderColor: 'rgba(0, 102, 204, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      indexAxis: 'y',
+      scales: {
+        x: {
+          beginAtZero: true,
+          max: 10
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
+
 </body>
 </html>
